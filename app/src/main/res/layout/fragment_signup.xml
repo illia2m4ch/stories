@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/horizontalIndent"
+    android:paddingRight="@dimen/horizontalIndent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/InterfaceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/InterfaceDescription"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input1_layout"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/gray_cc"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

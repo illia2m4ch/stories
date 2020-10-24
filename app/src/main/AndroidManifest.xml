@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="space.dam.stories">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.screens.account.AccountSettingsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.screens.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.screens.story.StoryActivity" />
+        <activity
+            android:name=".ui.screens.createStory.CreateStoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.account.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.start.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.start.LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.main.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

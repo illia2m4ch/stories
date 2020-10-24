@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@null"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:elevation="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        app:contentPadding="16dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/creatorPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/photo_default"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/storyType"
+                style="@style/ItemStoryType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_corners"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/creatorPhoto"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/creatorPhoto"
+                android:paddingBottom="2dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/creatorName"
+                    style="@style/ItemCreatorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/creationDate"
+                    style="@style/ItemCreationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/ItemTitle"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/ItemDescription"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

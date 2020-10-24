@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.createStory.CreateStoryActivity"
+    android:paddingTop="@dimen/verticalIndent"
+    android:paddingBottom="@dimen/verticalIndent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/horizontalIndent"
+            android:paddingRight="@dimen/horizontalIndent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/InterfaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/type_of_story"/>
+
+            <Button
+                android:id="@+id/historicalType"
+                style="@style/Button.Disabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/historical"
+                android:textColor="@color/colorHistoricalStory"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/funnyType"
+                style="@style/Button.Disabled"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/funny"
+                android:textColor="@color/colorFunnyStory"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/scaryType"
+                style="@style/Button.Disabled"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scary"
+                android:textColor="@color/colorScaryStory"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/lifeType"
+                style="@style/Button.Disabled"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/life"
+                android:textColor="@color/colorLifeStory"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/taleType"
+                style="@style/Button.Disabled"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tale"
+                android:textColor="@color/colorTale"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step2"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/horizontalIndent"
+            android:paddingRight="@dimen/horizontalIndent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/InterfaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/name"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:backgroundTint="@color/gray_cc"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step3"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/horizontalIndent"
+            android:paddingRight="@dimen/horizontalIndent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/InterfaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/description"/>
+
+            <EditText
+                android:id="@+id/inputDescription"
+                style="@style/Input.Multiline"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/description"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/horizontalIndent"
+        android:paddingRight="@dimen/horizontalIndent"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/back"/>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:visibility="invisible"
+            style="@style/Button.Disabled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp"
+            android:text="@string/next"/>
+    </LinearLayout>
+
+</LinearLayout>

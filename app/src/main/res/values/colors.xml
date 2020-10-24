@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#f5f5f5</color> <!-- 272727 #00574B -->
+    <color name="colorAccent">#4EB98C</color> <!-- #D81B60 -->
+    <color name="colorAccent_20">#DCF1E8</color>
+    <color name="colorAccentLight">#EDF8F3</color>
+    <color name="colorAccentDark">#2A6F52</color>
+    <color name="colorDangerDark">#B94141</color>
+    <color name="colorDanger">#FF4A4A</color>
+    <color name="colorDangerLight">#FFEDED</color>
+
+    <color name="transparentBlack">#33000000</color>
+
+
+    <color name="gray_10">#101010</color> <!-- Цвет текста -->
+    <color name="gray_44">#444444</color> <!-- Цвет второстепенного текста -->
+    <color name="gray_88">#888888</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_ee">#EEEEEE</color>
+    <color name="gray_f5">#f5f5f5</color> <!-- Цвет фона -->
+    <color name="white">#ffffff</color>
+
+    <color name="colorRed">#FF4A4A</color>
+    <color name="colorOrange">#FF7E36</color>
+    <color name="colorYellow">#FFB800</color>
+    <color name="colorGreen">#4EB98C</color>
+    <color name="colorBlue">#2C9AFF</color>
+
+    <!-- Цвет типов историй -->
+    <color name="colorScaryStory">@color/colorRed</color>
+    <color name="colorHistoricalStory">@color/colorOrange</color>
+    <color name="colorFunnyStory">@color/colorYellow</color>
+    <color name="colorLifeStory">@color/colorGreen</color>
+    <color name="colorTale">@color/colorBlue</color>
+
+</resources>

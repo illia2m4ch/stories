@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>-->
+    </style>
+
+<!--    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">-->
+<!--        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>-->
+<!--        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>-->
+<!--        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>-->
+<!--        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>-->
+<!--    </style>-->
+
+    <!-- Стили, используемые в интерфейсе -->
+    <style name="Interface">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+    <!-- Заголовок -->
+    <style name="InterfaceTitle" parent="Interface">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!-- Описание -->
+    <style name="InterfaceDescription" parent="Interface">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+    </style>
+
+    <!-- Обычная кнопка -->
+    <style name="Button" parent="Interface">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:stateListAnimator">@null</item> <!-- Убираем тень -->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Акцентная кнопка -->
+    <style name="Button.Accent">
+        <item name="android:background">@drawable/button_accent_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Заблокированная кнопка -->
+    <style name="Button.Disabled">
+        <item name="android:background">@drawable/button_neutral_bg</item>
+        <item name="android:textColor">@color/gray_cc</item>
+    </style>
+
+    <!-- Кнопка предупреждения без акцента-->
+    <style name="Button.Danger">
+        <item name="android:background">@drawable/button_danger_bg</item>
+        <item name="android:textColor">@color/colorDanger</item>
+    </style>
+
+    <!-- Акцентная кнопка предупреждения -->
+    <style name="Button.Danger.Accent">
+        <item name="android:background">@drawable/button_accent_danger_bg</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+    <style name="BigTitle">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+    </style>
+
+    <!-- Стили, используемые в карточках -->
+    <style name="ItemTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+
+    </style>
+
+    <style name="ItemDescription">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_44</item>
+    </style>
+
+    <style name="ItemCreationDate">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_cc</item>
+    </style>
+
+    <style name="ItemStoryType">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ItemCreatorName">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+    </style>
+
+    <!-- В профиле строчки -->
+    <style name="ProfileParameter">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_88</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <!-- В профиле строчки (значение) -->
+    <style name="ProfileParameterValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_10</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Инпут -->
+    <style name="Input">
+    </style>
+
+    <!-- Инпут (несколько строк) -->
+    <style name="Input.Multiline">
+        <item name="android:background">@drawable/input_multiline_bg</item>
+    </style>
+
+</resources>

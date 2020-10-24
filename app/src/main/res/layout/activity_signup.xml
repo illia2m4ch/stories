@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.start.SignUpActivity"
+    android:paddingBottom="@dimen/verticalIndent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/stepBar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="@dimen/verticalIndent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/verticalIndent"
+        android:layout_above="@+id/layout"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonBack"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/back"/>
+
+        <Button
+            android:id="@+id/buttonNext"
+            style="@style/Button.Disabled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="0dp"
+            android:text="@string/next"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/horizontalIndent"
+    android:paddingRight="@dimen/horizontalIndent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemPhoto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/photo_default"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/itemName"
+        style="@style/ItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
